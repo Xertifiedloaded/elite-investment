@@ -6,7 +6,7 @@ export default function Footer() {
         <>
        <footer className='mt-4'>
        <div className='text-center'>
-                © 2024 Elite Investment Ltd, 2022- {date}
+                © 2022- {date} Elite Investment Ltd, 
             </div>
        </footer>
         </>
