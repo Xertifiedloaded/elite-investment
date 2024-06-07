@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import { BiChevronUp, BiChevronDown } from 'react-icons/bi'
-import { FaCheck } from 'react-icons/fa'
 import { courseOutline } from '../utils'
-
 export default function Faq() {
     const [click, setClicked] = useState(false)
     const toggleFaq = idx => {
@@ -26,13 +24,11 @@ export default function Faq() {
                                     click === outline.id ? <BiChevronUp /> : <BiChevronDown />
                                 }
                             </div>
-
                             {
                                 click === outline.id ? <div >
                                     <p className='mt-3 opacity-65  font-400'>{outline.overview}</p>
                                 </div> : null
                             }
-
                         </div>
                     ))
                 }

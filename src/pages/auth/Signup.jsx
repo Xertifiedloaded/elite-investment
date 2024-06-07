@@ -9,8 +9,8 @@ export default function Signup() {
         <>
             <section className=' h-screen'>
                 <div className='flex h-full xs:block lg:flex  mx-auto'>
-                    <div className='auth w-[40%] lg:w-[40%] xs:w-full xs:h-screen  px-10 py-8  mx-auto  text-white'>
-                        <Link to='/' className='flex items-center gap-2'>
+                    <div className='auth w-[40%] lg:w-[40%] xs:w-full xs:h-screen  lg:px-10 xs:px-2 py-8  mx-auto  text-white'>
+                        <Link to='/' className='flex items-center  mb-4 gap-2'>
                             <BiArrowBack />
                             Go Back
                         </Link>
@@ -39,7 +39,7 @@ export default function Signup() {
                         </form>
                         <div className='flex mt-4 justify-end items-center'>
 
-                            <p className='text-xs'>You dont have an account <Link className='underline'>Signup</Link></p>
+                            <p className='text-xs'>You already have an account <Link to='/login' className='underline'>Login</Link></p>
                         </div>
                     </div>
                     <div className='w-[60%] lg:w-[60%] xs:hidden lg:block '>

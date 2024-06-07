@@ -8,8 +8,8 @@ export default function Login() {
         <>
             <section className=' h-screen'>
                 <div className='flex h-full xs:block lg:flex  mx-auto'>
-                    <div className='auth w-[40%] lg:w-[40%] xs:w-full xs:h-screen  px-10 py-8  mx-auto  text-white'>
-                    <Link to='/' className='flex items-center gap-2'>
+                    <div className='auth w-[40%] lg:w-[40%] xs:w-full xs:h-screen  lg:px-10 xs:px-2 py-8  mx-auto  text-white'>
+                        <Link to='/' className='flex items-center  mb-4 gap-2'>
                             <BiArrowBack />
                             Go Back
                         </Link>
@@ -17,7 +17,7 @@ export default function Login() {
                         <h1 className='lg:text-4xl font-700 my-2 xs:text-2xl'>Login</h1>
                         <p>Welcome Back</p>
                         <form className='mt-4'>
-                       
+
                             <label htmlFor="" className='block mb-4 text-[14px]'>
                                 Email address
                                 <input className='block rounded-md outline-none w-full h-12 bg-transparent border border-white px-2 placeholder:text-xs placeholder:capitalize' type="email" placeholder='email address' />
@@ -34,8 +34,8 @@ export default function Login() {
                             </button>
                         </form>
                         <div className='flex mt-4 justify-between items-center'>
-                         
-                            <p className='text-xs'>You already have an account <Link to='/signup' className='underline'>Signup</Link></p>
+
+                            <p className='text-xs'>You Dont have an account <Link to='/signup' className='underline'>Signup</Link></p>
                         </div>
                     </div>
                     <div className='w-[60%] lg:w-[60%] xs:hidden lg:block '>
