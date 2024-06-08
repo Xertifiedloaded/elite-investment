@@ -106,10 +106,10 @@ export function DashboardLayout() {
                             <div className='bg-black inset-0 p-4 fixed'>
 
 
-                                <FaX fontSize={25} color='white' onClick={toggler} />
+                                <FaX fontSize={20} color='white' onClick={toggler} />
                                 <div className=''>
 
-                                    <div className='bg-blue-500 text-white px-[20px]  mt-10 py-[50px] gap-3 flex justify-center items-center rounded-[20px]'>
+                                    <div className='bg-blue-500 text-white px-[20px] mt-2 py-[50px] gap-3 flex justify-center items-center rounded-[20px]'>
                                         <div className='border rounded-full h-[90px] w-[90px] border-white' />
                                         <div>
                                             <h1 className='text-4xl font-700 flex items-center'><FaDollarSign />100,000</h1>
