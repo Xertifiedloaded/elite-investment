@@ -1,3 +1,32 @@
+import { FaHome, FaReceipt, FaUser } from "react-icons/fa";
+import { FcSettings } from "react-icons/fc";
+
+export const sidebar=[
+  {
+    icon:<FaHome />,
+    name:"Dashboard",
+    path:'/dashboard'
+  },
+  {
+    icon:<FaReceipt/>,
+    name:"Transaction",
+    path:'/dashboard/transaction'
+  },
+  {
+    icon:<FaUser/>,
+    name:"Account",
+    path:'/dashboard/account'
+  },
+  {
+    icon:<FcSettings/>,
+    name:"Settings",
+    path:'/dashboard/settings'
+  },
+]
+
+
+
+
 export const courseOutline = [
     {
       id:1,

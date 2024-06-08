@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   /* background-image: radial-gradient(200% 92% at 50% 0px, rgb(33, 47, 92) 0%, rgb(24, 32, 49) 110%, rgb(21, 27, 39) 100%); */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.auth{
+
+.auth {
   background-image: radial-gradient(200% 92% at 50% 0px, rgb(33, 47, 92) 0%, rgb(24, 32, 49) 110%, rgb(21, 27, 39) 100%);
 }
