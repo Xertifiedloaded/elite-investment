@@ -5,7 +5,7 @@ import Landing from "./pages/landing/Landing";
 import Login from "./pages/auth/Login";
 import Signup from "./pages/auth/Signup";
 import Dashboard from "./pages/Dashboard";
-import Test from "./components/Test";
+
 
 export default function App() {
   const router = createBrowserRouter([
@@ -33,7 +33,7 @@ export default function App() {
       children: [
         {
           path: "/dashboard",
-          element: <Test />
+          element: <Dashboard/>
         },
         {
           path: "/dashboard/transaction",
