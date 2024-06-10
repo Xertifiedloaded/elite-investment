@@ -1,5 +1,152 @@
+import { CgProfile } from "react-icons/cg";
 import { FaHome, FaReceipt, FaUser } from "react-icons/fa";
 import { FcSettings } from "react-icons/fc";
+import ola from '../assets/xertifiedloaded.jpeg'
+
+export const transactionHistory = [
+  {
+    type: 'deposit',
+    status: 'successful',
+    amount: '2000'
+  },
+  {
+    type: 'deposit',
+    status: 'successful',
+    amount: '2000'
+  },
+  {
+    type: 'withdrawal',
+    status: 'successful',
+    amount: '2000'
+  },
+  {
+    type: 'deposit',
+    status: 'pending',
+    amount: '2000'
+  },
+  {
+    type: 'withdrawal',
+    status: 'successful',
+    amount: '2000'
+  },
+  {
+    type: 'deposit',
+    status: 'successful',
+    amount: '2000'
+  },
+  {
+    type: 'deposit',
+    status: 'successful',
+    amount: '2000'
+  },
+  {
+    type: 'deposit',
+    status: 'successful',
+    amount: '2000'
+  },
+  {
+    type: 'deposit',
+    status: 'successful',
+    amount: '2000'
+  },
+  {
+    type: 'deposit',
+    status: 'successful',
+    amount: '2000'
+  },
+  {
+    type: 'deposit',
+    status: 'successful',
+    amount: '2000'
+  },
+]
+
+
+export const recent = [
+  {
+    type: 'deposit',
+    status: 'successful',
+    amount: '2000',
+    timestamp: "31-05-2024",
+    name: "Ikugbamire Dara",
+    method: "BTC",
+    image: ola
+  },
+  {
+    type: 'deposit',
+    status: 'pending',
+    amount: '2000',
+    timestamp: "31-05-2024",
+    name: "Ikugbamire Dara",
+    method: "BTC",
+    image: ola
+
+  },
+  {
+    type: 'withdrawal',
+    status: 'successful',
+    amount: '2000',
+    timestamp: "31-05-2024",
+    name: "Ikugbamire Dara",
+    method: "BTC",
+    image: ola
+  },
+  {
+    type: 'deposit',
+    status: 'pending',
+    amount: '2000',
+    timestamp: "31-05-2024",
+    name: "Ikugbamire Dara",
+    method: "BTC",
+    image: ola
+  },
+  {
+    type: 'withdrawal',
+    status: 'successful',
+    amount: '2000',
+    timestamp: "31-05-2024",
+    name: "Ikugbamire Dara",
+    method: "BTC",
+    image: ola
+  },
+  {
+    type: 'withdrawal',
+    status: 'successful',
+    amount: '2000',
+    timestamp: "31-05-2024",
+    name: "Ikugbamire Dara",
+    method: "BTC",
+    image: ola
+  },
+  {
+    type: 'withdrawal',
+    status: 'successful',
+    amount: '2000',
+    timestamp: "31-05-2024",
+    name: "Ikugbamire Dara",
+    method: "BTC",
+    image: ola
+  },
+  {
+    type: 'withdrawal',
+    status: 'successful',
+    amount: '2000',
+    timestamp: "31-05-2024",
+    name: "Ikugbamire Dara",
+    method: "BTC",
+    image: ola
+  },
+]
+
+
+
+
+
+
+
+
+
+
 
 
 export const lineChartData = {
@@ -16,12 +163,14 @@ export const lineChartData = {
     {
       label: "Deposit",
       data: [200, 500, 600, 800, 400, 500, 700],
-      borderColor: 'rgb(75,192,192)'
+      borderColor: 'rgb(75,192,192)',
+      borderWidth: 1
     },
     {
       label: "Withdraw",
       data: [500, 800, 600, 600, 100, 500, 300],
-      borderColor: 'red'
+      borderColor: 'red',
+      borderWidth: 1
     }
   ]
 
@@ -40,7 +189,7 @@ export const PieChatData = {
   datasets: [
     {
       label: "Withdraw",
-      data: [50, 850,19000, 1200, 100, 5700, 1100],
+      data: [50, 850, 19000, 1200, 100, 5700, 1100],
       borderColor: ["red", "yellow", "blue", "pink", "blue", "brown", "green"],
       hoverOffset: 4
     }
@@ -53,6 +202,11 @@ export const PieChatData = {
 
 
 export const sidebar = [
+  {
+    icon: <CgProfile />,
+    name: "My profile",
+    path: '/profile'
+  },
   {
     icon: <FaHome />,
     name: "Dashboard",

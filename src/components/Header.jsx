@@ -11,7 +11,7 @@ export default function Header() {
     }
     return (
         <>
-            <header className=' shadow-xl py-5 '>
+            <header className=' shadow-xl py-5  '>
                 <div className='flex w-[95%] mx-auto items-center justify-between'>
                     <div>
                         <img className='xs:w-[120px] lg:w-[180px] xs:h-[40px] lg:h-[50px]' src={logo} alt="" />

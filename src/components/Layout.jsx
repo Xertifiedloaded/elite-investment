@@ -8,7 +8,7 @@ import { FaMessage, FaX } from 'react-icons/fa6';
 import { sidebar } from '../utils';
 import { BiLogOut } from 'react-icons/bi';
 import { GiHamburgerMenu } from 'react-icons/gi';
-
+import ola from '../assets/xertifiedloaded.jpeg'
 export default function Layout() {
 
 
@@ -37,13 +37,14 @@ export function DashboardLayout() {
     }
     return (
         <>
-            <main className='parent p-0 h-screen text-white flex  xs:block lg:flex lg:justify-between '>
-                <div className='lg:w-[28%] lg:bg-black xs:hidden lg:px-10 lg:py-10 lg:block  '>
+            <main className='parent lg:overflow-hidden xs:overflow-auto p-0 h-screen text-white flex  xs:block lg:flex lg:justify-between '>
+                <div className='lg:w-[25%] lg:bg-black xs:hidden lg:px-10 lg:py-10 lg:block  '>
                     <div className=''>
                         <h1 className='text-3xl'>Elite Investment Ltd</h1>
-                        <div className='bg-blue-500 px-[20px] mt-10 py-[50px] flex flex-col items-center rounded-[20px]'>
-                            <h1 className='text-4xl font-700 flex items-center'><FaDollarSign />100,000</h1>
-                            <p className='flex font-600 items-center gap-3 '> <div className='h-4 w-4 flex justify-center items-center rounded-full bg-white'><FaDollarSign color='blue' fontSize={14} /></div> Balance</p>
+                        <div className='mx-4 my-4'>
+                            <div className=' '>
+                                <img className=' w-[100px] rounded-full h-[100px] overflow-hidden' src={ola} alt="" />
+                            </div>
                         </div>
                     </div>
                     <div className='mt-7 '>
@@ -67,8 +68,8 @@ export function DashboardLayout() {
                     </div>
 
                 </div>
-                <div className='lg:w-[70%]  xs:px-4 lg:px-0 text-black  lg:mx-auto xs:w-full '>
-                    <header className='flex  xs:hidden lg:flex  items-center justify-between gap-2 '>
+                <div className='lg:w-[75%] overflow-auto  xs:px-4 lg:px-0 text-black  lg:mx-auto xs:w-full '>
+                    <header className='flex md:px-5 md:mb-6  xs:hidden lg:flex  items-center justify-between gap-2 '>
                         <h1>Dashboard</h1>
                         <div className='w-[80%] pt-3'>
                             <div className='flex items-center justify-between  gap-10'>
@@ -110,19 +111,27 @@ export function DashboardLayout() {
                                 <div className=''>
 
                                     <div className='bg-blue-500 text-white px-[20px] mt-2 py-[50px] gap-3 flex justify-center items-center rounded-[20px]'>
-                                        <div className='border rounded-full h-[90px] w-[90px] border-white' />
+                                        <div className=' '>
+                                            <img className=' w-[100px] rounded-full h-[100px] overflow-hidden' src={ola} alt="" />
+                                        </div>
                                         <div>
+
+                                        <p className='flex font-600 items-center justify-center gap-3 '>
+                                                <div className='h-4 w-4 flex justify-center items-center rounded-full bg-white'>
+                                                    <FaDollarSign color='blue' fontSize={14} />
+                                                </div>
+                                                Balance
+                                            </p>
                                             <h1 className='text-4xl font-700 flex items-center'><FaDollarSign />100,000</h1>
-                                            <p className='flex font-600 items-center gap-3 '> <div className='h-4 w-4 flex justify-center items-center rounded-full bg-white'><FaDollarSign color='blue' fontSize={14} /></div> Balance</p>
                                         </div>
                                     </div>
 
                                     {
                                         sidebar.map((items, i) => (
                                             <Link key={i} to={items.path} className={` flex text-white rounded-xl hover:bg-blue-600 transition-all duration-300 px-5 h-[55px] gap-2 mt-5 items-center`}>
-                                            {items.icon}
-                                            <p className='text-lg'>{items.name}</p>
-                                        </Link>
+                                                {items.icon}
+                                                <p className='text-lg'>{items.name}</p>
+                                            </Link>
                                         ))
                                     }
                                     <div className={` flex text-white rounded-xl hover:bg-blue-600 w-full transition-all duration-300 px-5 h-[55px] gap-2 mt-5 items-center`}>
@@ -134,7 +143,9 @@ export function DashboardLayout() {
                         }
 
                     </header>
+                
                     <Outlet />
+            
                 </div>
             </main>
 

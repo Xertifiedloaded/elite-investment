@@ -6,28 +6,24 @@ import { lineChartData } from '../utils'
 ChatJS.register(
     CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend
 )
+
 export default function Graph() {
     const options = {
         responsive: true,
         plugins: {
             legend: {
-                position: "bottom"
+                position: "top",
             },
-            Title: {
+            title: {
                 display: true,
-                title: {
-                    text: "Transaction Graph"
-                }
-
-            }
-        }
-    }
+                text: "Transaction Graph",
+            },
+        },
+    };
 
     return (
         <>
-
-            <Line options={options} data={lineChartData} />
-
+            <Line height={280} options={options} data={lineChartData} />
         </>
-    )
+    );
 }
