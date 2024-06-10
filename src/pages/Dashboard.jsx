@@ -50,8 +50,8 @@ export default function Dashboard() {
                     <div className='flex gap-3 items-center'>
                       <GrTransaction className='md:text-[20px] lg:text-[30px]' />
                       <div>
-                        <h1 className='lg:text-md md:text-md font-bold capitalize'>{items.type}</h1>
-                        <p className={`${items.type === 'deposit' ? 'text-green-600' : items.type === 'withdrawal' ? 'text-red-600' : null} flex md:text-sm items-center`}>
+                        <h1 className='lg:text-md md:text-md xs:sm font-bold capitalize'>{items.type}</h1>
+                        <p className={`${items.type === 'deposit' ? 'text-green-600' : items.type === 'withdrawal' ? 'text-red-600' : null} flex md:text-sm xs:xs items-center`}>
                           {items.type === 'deposit' ? <p>+</p> : items.type === 'withdrawal' ? <p>-</p> : null}${items.amount}</p>
                       </div>
                     </div>

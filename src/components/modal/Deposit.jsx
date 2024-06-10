@@ -9,7 +9,6 @@ export default function Deposit({ toggleDeposit }) {
     const [confirmationTimer, setConfirmationTimer] = useState(7200);
     const [paymentCompleted, setPaymentCompleted] = useState(false);
     const [isMethodSelected, setIsMethodSelected] = useState(false);
-
     useEffect(() => {
         let timer;
         if (showConfirmation) {
@@ -34,7 +33,6 @@ export default function Deposit({ toggleDeposit }) {
         '0xeb480B8c671399679783cA778Fe39e53930Be823': 'Only send ETH (BEP20) token asset to this address. other assets will be lost forever',
         'bc1q4mq70fc88as7mn8r8nqc0py54hwx0mmhjvy06x': 'only send Bitcoin(BTC) tokens asset to this address. other assets will be lost forever'
     };
-
     const handleMethodChange = (event) => {
         const selectedMethod = event.target.value;
         setMethod(selectedMethod);
