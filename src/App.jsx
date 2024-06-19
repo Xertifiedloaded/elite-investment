@@ -5,6 +5,8 @@ import Landing from "./pages/landing/Landing";
 import Login from "./pages/auth/Login";
 import Signup from "./pages/auth/Signup";
 import Dashboard from "./pages/Dashboard";
+import AuthContext, { AuthProvider } from './pages/auth/AuthProvider';
+import ProtectedRoute from './pages/auth/ProtectedRoute';
 
 
 export default function App() {
@@ -29,11 +31,12 @@ export default function App() {
     },
     {
       path: "/dashboard",
-      element: <DashboardLayout />,
+      // element: <ProtectedRoute/>,
+      element: <DashboardLayout/>,
       children: [
         {
           path: "/dashboard",
-          element: <Dashboard/>
+          element: <Dashboard />
         },
         {
           path: "/dashboard/transaction",
@@ -52,6 +55,6 @@ export default function App() {
   ]);
 
   return (
-    <RouterProvider router={router} />
+<AuthProvider>    <RouterProvider router={router} /></AuthProvider>
   );
 }
