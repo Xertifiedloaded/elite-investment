@@ -22,7 +22,7 @@ export const register = async (userData) => {
     }
 
   } catch (error) {
-    throw error.response.data;
+    throw error
   }
 };
 

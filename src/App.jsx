@@ -31,8 +31,8 @@ export default function App() {
     },
     {
       path: "/dashboard",
-      // element: <ProtectedRoute/>,
-      element: <DashboardLayout/>,
+      element: <ProtectedRoute/>,
+      // element: <DashboardLayout/>,
       children: [
         {
           path: "/dashboard",

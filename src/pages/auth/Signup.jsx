@@ -7,7 +7,7 @@ import { register } from '../../utils/app';
 
 export default function Signup() {
     const [credentials, setCredentials] = useState({ userName: '', password: '', email: '', lastName: '', firstName: '' });
-    const [loading,setLoading]=useState(false)
+    const [loading, setLoading] = useState(false)
     const handleRegister = async (e) => {
         e.preventDefault();
         try {
@@ -85,9 +85,9 @@ export default function Signup() {
                                 />
                             </label>
                             <button className='w-full bg-black h-14 mt-7 rounded-xl' type="submit">
-                           {
-                            loading ? <div class="loader"></div>: 'register'
-                           }
+                                {
+                                    loading ? 'Loading..... please wait' : 'Login'
+                                }
                             </button>
                             <button className='w-full bg-black h-14 mt-3 rounded-xl' type="button">
                                 Register with Google

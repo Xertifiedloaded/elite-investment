@@ -66,7 +66,7 @@ const Login = () => {
                         </label>
                         <button  onClick={handleLogin}  className="w-full bg-black h-14 mt-7 rounded-xl" type="button">
                         {
-                            loading ? <div class="loader"></div>: 'Login'
+                            loading ?'Loading..... please wait': 'Login'
                            }
                         </button>
                         <button type='button' className="w-full bg-black h-14 mt-3 rounded-xl">
